@@ -1,39 +1,30 @@
 # UE22EC342BC2-Aashna_Ankitha-Smart_Object_Counter
 
-Project Overview
+📌 INTRODUCTION
+This project is a low-cost, beginner-friendly system for detecting and counting small objects using an Infrared (IR) sensor and an Arduino Uno. It’s designed for applications like sorting, packaging, and inventory tracking, especially in educational or small-scale automation environments.
 
-This project is a simple and low-cost solution for counting small objects using an infrared (IR) sensor and an Arduino Uno. It is useful for tasks like sorting, packaging, and inventory tracking in small-scale or educational setups.
-
-Instead of using complex and expensive camera systems, this project detects objects based on the reflection of IR light. When an object passes in front of the sensor, the Arduino counts it and sends the data to a computer.
-
-How It Works
-
-An IR sensor detects objects by sensing reflected infrared light.
-
-The Arduino Uno reads the sensor and counts each object that passes by.
-
-This count is sent to a computer using serial communication.
-
+⚙️ HOW IT WORKS
+An IR sensor emits and detects reflected infrared light when an object passes by.
+The Arduino Uno reads the sensor signal and keeps count of the objects.
+The count is sent via serial communication to a computer.
 A ROS2 Python node receives the data and publishes it to a ROS2 topic.
+This enables real-time monitoring and visualization using ROS tools.
 
-The system can be connected to tools like rviz or rqt_plot for visualization.
+🧠 WHY USE THIS SYSTEM?
+Simple and cost-effective alternative to camera-based systems
+Easy to build and understand for beginners
+Real-time data processing with ROS2
+Modular and scalable for robotics integration
 
-Why This Project?
-
-Simple and affordable hardware
-
-Easy to build and understand
-
-Works in real-time
-
-Can be used for learning and small automation projects
-
-Tools and Technologies
-
+🛠️ TECHNOLOGIES USED
 Arduino Uno
+Infrared (IR) Sensor
+L298N Motor Driver
+ROS2 (Robot Operating System 2)
 
-IR Sensor
 
-ROS2
-
-Python
+🎯 IDEAL FOR 
+Robotics and automation students
+STEM learning environments
+Quick prototyping for object detection/counting
+Lightweight industrial automation demos
