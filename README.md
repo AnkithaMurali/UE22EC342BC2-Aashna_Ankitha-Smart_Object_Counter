@@ -8,11 +8,11 @@ Instead of using complex and expensive camera systems, this project detects obje
 
 ### HOW IT WORKS
 
-An IR sensor detects objects by sensing reflected infrared light.
+An IR sensor detects objects by sensing reflected infrared light. If an object is detected, the sensor value is high. 
 
 The Arduino Uno reads the sensor and counts each object that passes by.
 
-This count is sent to a computer using serial communication.
+This count is sent to a computer using serial communication (pySerial).
 
 A ROS2 Python node receives the data and publishes it to a ROS2 topic.
 
